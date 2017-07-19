@@ -9,13 +9,6 @@ let space = " ";
 let tree = {height: 0, character: "a"};
 
 
-(characterenter && heightenter).onkeydown = function(e){
-   if(e.keyCode == 13){
-     validateForm();
-   }
-};
-
-
 function validateForm() {
 	tree.height = document.getElementById("height-input").value;
 	tree.character = document.getElementById("character-input").value;
